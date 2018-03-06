@@ -9,6 +9,10 @@ I'm trying to build a template Ionic app that has the following:
 ...and the Ionic Conference App seemed like a good place to start.
 I'm starting with the Confernece app and stripping a lot of it away, plus adding a few things.
 
+## Latest
+* There is probably an easier way to do the version number. (03/06/18) Right now you have to manually update version.json
+
+
 # Ionic Conference Application
 
 This is the official Ionic demo app, showcasing a variety of Ionic Framework components and native features.
