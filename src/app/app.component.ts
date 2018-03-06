@@ -1,3 +1,5 @@
+import * as data from '../assets/version.json';
+
 import { Component, ViewChild } from '@angular/core';
 
 import { Events, MenuController, Nav, Platform } from 'ionic-angular';
@@ -58,6 +60,7 @@ export class ConferenceApp {
     { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
   ];
   rootPage: any;
+  version: any;
 
   constructor(
     public events: Events,
@@ -80,9 +83,11 @@ export class ConferenceApp {
         this.platformReady()
       });
 
-    // load the conference data
+    this.loadVersion();
+    
+      // load the conference data
     confData.load();
-
+    
     // decide which menu items should be hidden by current login status stored in local storage
     this.userData.hasLoggedIn().then((hasLoggedIn) => {
       this.enableMenu(hasLoggedIn === true);
@@ -90,6 +95,11 @@ export class ConferenceApp {
     this.enableMenu(true);
 
     this.listenToLoginEvents();
+  }
+
+  loadVersion(): any {
+    this.version = data["version"];
+    console.log("loadVersion: " + data["version"]);
   }
 
   openPage(page: PageInterface) {

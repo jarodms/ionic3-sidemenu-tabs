@@ -1,3 +1,14 @@
+# What is this?
+I'm trying to build a template Ionic app that has the following:
+  1. Tabs
+  2. Sidemenu
+  3. Version number at the bottom of the sidemenu
+  4. Basic About page
+  5. Support page
+  
+...and the Ionic Conference App seemed like a good place to start.
+I'm starting with the Confernece app and stripping a lot of it away, plus adding a few things.
+
 # Ionic Conference Application
 
 This is the official Ionic demo app, showcasing a variety of Ionic Framework components and native features.
