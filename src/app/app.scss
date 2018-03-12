@@ -68,7 +68,16 @@
   }
 }
 
+.toolbar-title {
+  text-align: center;
+}
+
 #version .toolbar-title {
   font-size: 16px;
   font-weight: 300;
+}
+
+.toolbar-title-md {
+  padding-left: 0px;
+  padding-right: 30px;
 }
