@@ -18,7 +18,7 @@ export class MapPage {
   constructor(public confData: ConferenceData, public platform: Platform) {
   }
 
-  ionViewDidLoad() {
+  /*ionViewDidLoad() {
 
       this.confData.getMap().subscribe((mapData: any) => {
         let mapEle = this.mapElement.nativeElement;
@@ -50,5 +50,5 @@ export class MapPage {
 
       });
 
-  }
+  }*/
 }
