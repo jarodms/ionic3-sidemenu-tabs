@@ -10,7 +10,8 @@ I'm trying to build a template Ionic app that has the following:
 I'm starting with the Confernece app and stripping a lot of it away, plus adding a few things.
 
 ## Latest
-* There is probably an easier way to do the version number. (03/06/18) Right now you have to manually update version.json
+* 03/14/18: during postinstall (`npm i`), version number is pulled from package.json and placed into assets\version.ts;  Thanks to  https://medium.com/@amcdnl/version-stamping-your-app-with-the-angular-cli-d563284bb94d
+
 
 
 # Ionic Conference Application

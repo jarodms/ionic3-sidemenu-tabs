@@ -5,7 +5,7 @@ import { ConferenceData } from '../../providers/conference-data';
 import { Platform } from 'ionic-angular';
 
 
-declare var google: any;
+// declare var google: any;
 
 
 @Component({

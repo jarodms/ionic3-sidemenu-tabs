@@ -1,4 +1,4 @@
-import * as data from '../assets/version.json';
+import { VERSION } from '../assets/version';
 
 import { Component, ViewChild } from '@angular/core';
 
@@ -40,6 +40,8 @@ export class ConferenceApp {
   // @ViewChild(Nav) gets a reference to the app's root nav
   @ViewChild(Nav) nav: Nav;
 
+  version = VERSION;
+
   // List of pages that can be navigated to from the left menu
   // the left menu only works after login
   // the login page disables the left menu
@@ -60,8 +62,7 @@ export class ConferenceApp {
     { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
   ];
   rootPage: any;
-  version: any;
-
+  
   constructor(
     public events: Events,
     public userData: UserData,
@@ -85,10 +86,8 @@ export class ConferenceApp {
         }
         this.platformReady()
       });
-
-    this.loadVersion();
     
-      // load the conference data
+    // load the conference data
     confData.load();
     
     // decide which menu items should be hidden by current login status stored in local storage
@@ -98,12 +97,7 @@ export class ConferenceApp {
     this.enableMenu(true);
 
     this.listenToLoginEvents();
-  }
-
-  loadVersion(): any {
-    this.version = data["version"];
-    console.log("loadVersion: " + data["version"]);
-  }
+  }  
 
   openPage(page: PageInterface) {
     let params = {};
