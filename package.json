@@ -2,11 +2,6 @@
   "name": "Ionic3-Sidemenu-Tabs",
   "version": "0.0.1",
   "description": "An Ionic project",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ionic-team/ionic-conference-app.git"
-  },
   "scripts": {
     "build": "ionic-app-scripts build",
     "clean": "ionic-app-scripts clean",
